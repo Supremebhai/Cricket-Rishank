@@ -2,36 +2,42 @@
 <html lang="en">
 <head> 
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1898954950693618');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1898954950693618&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1898954950693618'); 
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1898954950693618&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cricket Rishank™🏏🏆</title>
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- Fog Layers (background effect) -->
+  <!-- Fog Layers -->
   <div class="fog-layer"></div>
   <div class="fog-layer2"></div>
 
   <div class="bg-overlay">
     <div class="card">
+      
       <div class="avatar-wrapper">
         <div class="avatar-glow"></div>
         <img src="images/dp.jpg" class="avatar" alt="Cricket Rishank" />
@@ -43,7 +49,9 @@ src="https://www.facebook.com/tr?id=1898954950693618&ev=PageView&noscript=1"
       <div id="timer" class="timer">0:58</div>
       <p class="seconds-left">Seconds Left</p>
 
-      <a href="https://t.me/+8mbJZt2ZK9hiZTZl" class="cta-btn" target="_blank" rel="noopener">JOIN THE CHANNEL NOW</a>
+      <a href="https://t.me/+8mbJZt2ZK9hiZTZl" class="cta-btn" target="_blank" rel="noopener">
+        JOIN THE CHANNEL NOW
+      </a>
 
       <p class="tagline">Sharing expertise as a dedicated cricket analyst</p>
 
@@ -64,9 +72,11 @@ src="https://www.facebook.com/tr?id=1898954950693618&ev=PageView&noscript=1"
         seconds = parseInt(timer % 60, 10);
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = minutes + ":" + seconds;
+
         if (--timer < 0) timer = duration;
       }, 1000);
     }
+
     window.onload = function () {
       const countdownSeconds = 59;
       const display = document.getElementById("timer");
